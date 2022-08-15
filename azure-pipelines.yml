@@ -24,7 +24,7 @@ steps:
     artifactName: 'drop'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/build$(Build.BuildId).zip'
     ArtifactName: 'drop'
 
 - task: AzureFunctionApp@1 # Add this at the end of your file
