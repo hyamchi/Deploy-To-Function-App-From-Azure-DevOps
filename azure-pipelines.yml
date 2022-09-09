@@ -1,9 +1,9 @@
 
-trigger:
-- main
+ trigger:
+ - main
 
-variables:
-  # Azure service connection established during pipeline creation
+ variables:
+  #  Azure service connection established during pipeline creation
   azureSubscription: 'my service conn for fn demo'
   appName: 'func-app-yamchi'
   # Agent VM image name
